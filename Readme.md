@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Veronika Shorokhova](https://up.htmlacademy.ru/htmlcss/27/user/850339).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Гирда](https://htmlacademy.ru/profile/viktorgirda).
 
 ---
 
