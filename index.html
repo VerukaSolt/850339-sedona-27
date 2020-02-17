@@ -12,16 +12,16 @@
     <img src="img/logo.png" width="140" height="72" alt="Логотип Sedona">
     </a>
     <ul class="site-navigation">
-      <li><a href="info.html">информация</a></li>
-      <li><a href="foto and video.html">фото и видео</a></li>
-      <li><a href="state map.html">карта штата</a></li>
-      <li><a href="hotels.html">гостиницы</li>
+      <li><a href="info.html" tabindex="1" alt="Информация">информация</a></li>
+      <li><a href="foto and video.html" tabindex="2" alt="Фото и видео">фото и видео</a></li>
+      <li><a href="state map.html" tabindex="3" alt="Карта штата">карта штата</a></li>
+      <li><a href="hotels.html" tabindex="4" alt="Гостиницы">гостиницы</li>
     </ul>
   </nav>
 </header>
 <main>
   <section>
-  <h1>Welcome to the georgeos Sedona<h1>
+  <h1 class="visually-hidden">Welcome to the georgeos Sedona<h1>
   <img src="img/welcome.svg" width="459" height="353" alt="Welcome to Sedona">
 </section>
   <section>
@@ -77,20 +77,55 @@
     <h3>Заинтересовались?</h3>
     <p>Укажите предполагаемые даты поездки,<br>
     и мы покажем вам лучшие предложения гостиниц в Седоне </p>
-      <!--здесь будет форма-->
+      <div class="pop-up">
+        <div>
+          <h3>Поиск гостиницы в Седоне</h3>
+        </div>
+        <div>
+          <form action="https://echo.htmlacademy.ru/courses" method="post">
+    <label for="check-in-date"> Дата заезда</label>
+    <div class="input-field">
+     <input type="text" id="check-in-date" name="check-in-date" placeholder="24 апреля 2017" required tabindex="1" alt="Дата заезда">
+     <div class="calendar"></div>
+     </div>
+     <label for="check-out-date">Дата выезда</label>
+     <div class="input-field">
+    <input type="text" id="check-out-date" name="check-out-date" placeholder="4 июля 2017" required tabindex="2" alt="Дата выезда">
+    <div class="calendar"></div>
+    </div>
+    <div class="input-short">
+    <label for="adult">Взрослые:</label>
+    <input type="bottom-minus" value="-" tabindex="3" alt="меньше">
+    <input type="text" id="adult" name="adult" value="2" alt="количество взрослых">
+    <input type="bottom-plus" value="+" tabindex="4" alt="больше">
+    </div>
+     <div class="input-short">
+       <label for="kids">Дети:</label>
+       <input type="bottom-minus" value="-" tabindex="5" alt="меньше">
+       <input type="text" id="kids" name="adult" value="0" alt="количество детей">
+       <input type="bottom-plus" value="+" tabindex="6" alt="больше">
+     </div>
+     <div class="buttons">
+       <input type="submit" value="Найти" tabindex="7" alt="Логотип Sedona="Найти">
+     </div>
+   </form>
+        </div>
+      </div>
+  </section>
+  <section class="map">
   </section>
 </main>
 <footer>
-  <a href=#>#visit Sedona</a><br>
-  <a href=#>Тел: +7(495) 666-02-66</a>
+  <a href=# tabindex="6">#visit Sedona</a><br>
+  <a href=# tabindex="7" alt="номер телефона">Тел: +7(495) 666-02-66</a>
  <div>
  <ul>
-   <li><a href="#">Твитер</a></li>
-   <li><a href="#">Фейсбук</a></li>
-   <li><a href="#">Ютюб</a></li>
+   <li><a href="#" tabindex="8" alt="Твитер">Твитер</a></li>
+   <li><a href="#" tabindex="9" alt="Фейсбук">Фейсбук</a></li>
+   <li><a href="#" tabindex="10" alt="Ютюб">Ютюб</a></li>
  </ul>
 </div>
-<a href= https://htmlacademy.ru/>
+<a href= https://htmlacademy.ru/ tabindex="11" alt="html академия">
   Website by Html Academy
 </a>
 </footer>
