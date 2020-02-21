@@ -1,0 +1,201 @@
+body {
+margin: 0;
+padding: 0;
+font-family: "PT Sans", "sans-serif";
+font-size: 14px;
+line-height: 21px;
+font-weight: 400;
+text-transform: uppercase;
+background-color: white;
+border: 2px; #000000;
+}
+
+header,
+main,
+footer {
+  width: 1200px;
+
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+.main-header-logo {
+  margin-left: 531px;
+}
+
+section.welcome {
+  width: 1200px;
+  height: 800px;
+  background: url("../img/background-photo.jpg");
+  background-repeat: no-repeat;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+p {
+    font: initial;
+}
+.sedona-img {
+  text-align: center;
+
+}
+.site-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  background-color: white;
+  list-style: none;
+  font-weight: 700;
+  color: #000000;
+  padding: 0;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus{
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+color: #rgba(0,0,0,0.3);
+}
+
+.site-navigation li {
+  display: inline;
+  width: 240px;
+  height: 56px;
+  line-height: 26;
+  vertical-align: top;
+
+}
+.site-navigation li:nth-child(1),
+.site-navigation li:nth-child(2) {
+}
+}
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+}
+
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+.advantages-gray {
+  width: 400px;
+  height: 256px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 14px;
+  background-color: #eeeeee;
+  display: block;
+}
+.advantages-blue {
+  width: 280px;
+  height: 146px;
+  text-align: center;
+  font-size: 14px;
+  margin-left: 0;
+  color: #ffffff;
+  background-color: #81b3d2;
+  padding: 46px 60px 64px;
+  display: block;
+}
+
+.real-town {
+  background-image: url("../img/feature-picture-1.jpg");
+  background-position: right;
+  width: 1200px;
+  height: 256px;
+  background-repeat: no-repeat;
+}
+
+.devils-brige {
+  background-image: url("../img/feature-picture-2.jpg");
+  background-position: left;
+  width: 1200px;
+  height: 256px;
+  background-repeat: no-repeat;
+}
+.second {
+  position: right;
+  margin-left: 800px;
+}
+
+.interested h3{
+  font-size: 30px;
+}
+.social {
+  background-color: #81b3d2;
+  width: 46px;
+  height: 48px;
+  list-style: none;
+}
+
+.socials li:nth-child(1)::before {
+  content: url("../img/tw-icon.png");
+  width: 17px;
+  height: 15px;
+  padding: 15px 14px 16px;
+}
+
+.socials li:nth-child(2)::before {
+  content: url("../img/fb-icon.png");
+  width: 17px;
+  height: 15px;
+  padding: 12px 17px 13px;
+}
+.socials li:nth-child(3)::before {
+  content: url("../img/youtube-icon.png");
+  width: 17px;
+  height: 15px;
+  padding: 13px 13px 16px;
+}
+
+.social a:hover {
+  color: #669ec0;
+}
+
+.social a:active {
+color: #5496bd;
+}
+.pop-up {
+  display: none;
+}
+.academy a::before {
+  content: url("../img/logo-htmla.png");
+}
+.contact {
+    font-size: 21px;
+}
+
+a.button-more {
+  display: inline;
+  width: 110px;
+  height: 27px;
+  background-color: #81b3d2;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 8px 17px 7px;
+}
+a.button-book {
+  display: inline;
+  width: 142px;
+  height: 27px;
+  background-color: #766357;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 8px 16px 8px;
+}
+
+.rate {
+  display: inline;
+  width: 110px;
+  height: 27px;
+  background-color: #f2f2f2;
+  padding: 5px 13px 6px;
+  color: #666666;
+}
