@@ -21,7 +21,10 @@ a {
   color: #000000;
 }
 .main-header-logo {
-  margin-left: 531px;
+position: absolute;
+padding: 0;
+font-size: 0;
+line-height: 0;
 }
 
 section.welcome {
@@ -35,23 +38,32 @@ h3 {
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
-}
 
-p {
-    font: initial;
 }
 .sedona-img {
   text-align: center;
 
 }
 .site-navigation {
+  width: 1200px;
+  display: flex;
+  justify-content: flex-start;
+  wrap: nowrap;
   font-size: 14px;
   line-height: 26px;
   background-color: white;
   list-style: none;
   font-weight: 700;
   color: #000000;
-  padding: 0;
+}
+.navigation-item {
+  display: flex;
+  flex-direction: column;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .site-navigation a:hover,
@@ -64,34 +76,56 @@ color: #rgba(0,0,0,0.3);
 }
 
 .site-navigation li {
-  display: inline;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 240px;
   height: 56px;
   line-height: 26;
+  margin: auto;
   vertical-align: top;
+  box-sizing: border-box;
+
+}
+.main-header-logo {
+  padding: 0;
+  font-size: 0;
+  position: relative;
 
 }
 .site-navigation li:nth-child(1),
 .site-navigation li:nth-child(2) {
+
 }
 }
 .site-navigation li:nth-child(3),
 .site-navigation li:nth-child(4) {
+
 }
 
 
 .visually-hidden {
-  visibility: hidden;
+display: none;
 }
-
-.advantages-gray {
-  width: 400px;
-  height: 256px;
+.sights {
+  display:flex;
+  align-items: center;
   text-align: center;
-  vertical-align: middle;
+  justify-content: center;
+  height: 330px;
+
+}
+.advantages-gray {
+  width: 1200px;
+  height: 256px;
   font-size: 14px;
   background-color: #eeeeee;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content:  center;
+  align-items: center;
+  text-align: center;
 }
 .advantages-blue {
   width: 280px;
@@ -134,6 +168,11 @@ color: #rgba(0,0,0,0.3);
   height: 48px;
   list-style: none;
 }
+.social a{
+  width: 46px;
+  height: 48px;
+  display: block;
+}
 
 .socials li:nth-child(1)::before {
   content: url("../img/tw-icon.png");
@@ -161,6 +200,9 @@ color: #rgba(0,0,0,0.3);
 
 .social a:active {
 color: #5496bd;
+}
+
+
 }
 .pop-up {
   display: none;
