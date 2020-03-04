@@ -33,7 +33,13 @@ section.welcome {
   background: url("../img/background-photo.jpg");
   background-repeat: no-repeat;
 }
-
+.reasons {
+  text-align: center;
+  padding-bottom: 56px;
+}
+.sedona-img {
+  padding-top: 76px;
+}
 h3 {
   font-weight: 700;
   font-size: 21px;
@@ -48,7 +54,7 @@ h3 {
   width: 1200px;
   display: flex;
   justify-content: flex-start;
-  wrap: nowrap;
+  align-items: center;
   font-size: 14px;
   line-height: 26px;
   background-color: white;
@@ -56,16 +62,17 @@ h3 {
   font-weight: 700;
   color: #000000;
 }
-.navigation-item {
-  display: flex;
-  flex-direction: column;
+
 }
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
-
+.navigation-wraper {
+  display: flex;
+    width: 1200px;
+}
 .site-navigation a:hover,
 .site-navigation a:focus{
   color: #81b3d2;
@@ -80,8 +87,9 @@ color: #rgba(0,0,0,0.3);
   flex-direction: column;
   flex-wrap: wrap;
   width: 240px;
-  height: 56px;
-  line-height: 26;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  line-height: 26px;
   margin: auto;
   vertical-align: top;
   box-sizing: border-box;
@@ -111,7 +119,7 @@ display: none;
   display:flex;
   align-items: center;
   text-align: center;
-  justify-content: center;
+  justify-content: space-around;
   height: 330px;
 
 }
@@ -123,10 +131,23 @@ display: none;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content:  center;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
 }
+.advantages-gray div:nth-child(1) {
+  width: 208px;
+  padding: 50px 97px 63px 95px;
+}
+.advantages-gray div:nth-child(2) {
+  width: 262px;
+  padding: 50px 69px 64px 69px;
+}
+.advantages-gray div:nth-child(3) {
+  width: 262px;
+  padding: 50px 77px 64px 77px;
+}
+
 .advantages-blue {
   width: 280px;
   height: 146px;
@@ -138,35 +159,135 @@ display: none;
   padding: 46px 60px 64px;
   display: block;
 }
-
+.sight1 >p {
+  width: 252px;
+}
+.sight2 >p {
+  width: 284px;
+}
+.sight3 >p {
+  width: 273px;
+}
+.real-town-wrapper {
+  display: flex;
+  flex-direction: row;
+}
 .real-town {
   background-image: url("../img/feature-picture-1.jpg");
   background-position: right;
-  width: 1200px;
+  width: 800px;
   height: 256px;
   background-repeat: no-repeat;
+  order: 2;
+}
+.devils-brige-wrapper {
+  display: flex;
+  flex-direction: row;
 }
 
 .devils-brige {
   background-image: url("../img/feature-picture-2.jpg");
   background-position: left;
-  width: 1200px;
+  width: 800px;
   height: 256px;
   background-repeat: no-repeat;
 }
 .second {
-  position: right;
-  margin-left: 800px;
+  align-self: flex-end;
 }
 
 .interested h3{
   font-size: 30px;
+}
+.interested p {
+  margin-top: 0;
+}
+.interested {
+  display: flex;
+  width: 434px;
+  min-height: 93px;
+  margin-left: 383px;
+  margin-right: 383px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.pop-up h3 {
+    text-align: center;
+    background-size: 568px 86px;
+    background-color: #766357;
+    color: white;
+}
+.pop-up {
+  display: flex;
+  width: 1200px;
+
+}
+form {
+  display: flex;
+  width: 458px;
+  min-height: 370px;
+  padding: 0;
+  font-weight: 700;
+  margin: auto;
+}
+.field {
+    position: relative;
+    margin-bottom: 30px;
+    clear: both;
+    text-align: left;
+}
+.field input {
+  width: 346px;
+  min-height: 32px;
+  background-color: #f2f2f2;
+}
+input[type=submit] {
+  width: 458px;
+  height: 58px;
+  background-color: #81b3d2;
+  color: white;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.short-field input{
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
+  margin-right: -4px;
+  padding: 0;
+}
+.main-footer {
+  display: flex;
+  width: 1200px;
+  height: 120px;
+  opacity: 0.9;
+  justify-content: space-around;
+}
+.contact {
+  display: flex;
+  width: 223px;
+  margin-top: 36px;
+  flex-wrap: wrap;
+}
+.socials {
+  display: flex;
+  width: 150px;
 }
 .social {
   background-color: #81b3d2;
   width: 46px;
   height: 48px;
   list-style: none;
+  display: flex;
+  text-align: justify;
+  margin-left: 6px;
+  margin-top: 36px;
+
 }
 .social a{
   width: 46px;
@@ -201,19 +322,15 @@ display: none;
 .social a:active {
 color: #5496bd;
 }
-
-
+.copyright {
+  display: flex;
+  width: 200px;
+  margin-top: 36px;
 }
-.pop-up {
-  display: none;
-}
-.academy a::before {
+.copyright a::before {
   content: url("../img/logo-htmla.png");
 }
-.contact {
-    font-size: 21px;
-}
-
+/* inner */
 a.button-more {
   display: inline;
   width: 110px;

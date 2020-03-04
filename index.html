@@ -10,38 +10,42 @@
   <body>
 <div class="container clearfix">
 <header>
-  <nav>
+  <nav class="site-navigation ">
     <a class="main-header-logo">
     <img src="img/logo.svg" width="140" height="72" alt="Логотип Sedona">
     </a>
-  <ul class="site-navigation ">
+    <div class="navigation-wraper">
+  <ul>
       <li class="navigation-item"><a href="info.html"  alt="Информация">информация</a></li>
       <li class="navigation-item"><a href="foto and video.html" alt="Фото и видео">фото и видео</a></li>
       <li class="navigation-item"><a href="state map.html"  alt="Карта штата">карта штата</a></li>
-      <li class="navigation-item"><a href="hotels.html" alt="Гостиницы">гостиницы</li>
+      <li class="navigation-item"><a href="hotels.html" alt="Гостиницы">гостиницы</a></li>
     </ul>
+  </div>
   </nav>
 </header>
 </div>
 <main>
   <section class="welcome">
-  <h1 class="visually-hidden">Welcome to the georgeos Sedona<h1>
+  <h1 class="visually-hidden">Welcome to the georgeos Sedona</h1>
 <div class="sedona-img">
   <img src="img/welcome.svg" width="459" height="353" alt="Welcome to Sedona">
 </div>
 </section>
-  <section>
-    <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!<h2>
+  <section class="reasons">
+    <h2>Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
     <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
    </section>
-   <section class="real-town">
+   <div class="real-town-wrapper">
+   <div class="real-town">
+        </div>
     <div class="advantages-blue">
     <h3>настоящий городок</h3>
     <span>-№1-</span>
     <p>седона не аттракцион для туристов,
     там течёт своя жизнь</p>
     </div>
-   </section>
+  </div>
     <div class="sights">
   <div class="sight1">
     <img src="img/icon-1.png">
@@ -59,23 +63,25 @@
     <p>Не только китайского, но и местного производства!</p>
   </div>
 </div>
-  <section class="devils-brige">
+  <div class="devils-brige-wrapper">
+  <div class="devils-brige">
+  </div>
   <div class="advantages-blue second">
     <h3>Там есть мост дьявола</h3>
     <span>-№2-</span>
     <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
   </div>
-</section>
+</div>
 <div class="advantages-gray">
   <div class="advantage-gray">
     <h3>Небольшая площадь</h3>
     <span>-№3-</span>
-    <p>Все достопримечательности находятся очень близко</p>
+ <p>Все достопримечательности находятся очень близко</p>
   </div>
   <div class="advantage-gray">
     <h3>Красивая дорога</h3>
     <span>-№4-</span>
-    <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
   </div>
   <div class="advantage-gray">
     <h3>Мало туристов</h3>
@@ -83,52 +89,59 @@
     <p>Большинство едет в Гранд Каньон и толпится там</p>
   </div>
 </div>
-  <section>
+  <section class="form-container">
     <div class="interested">
     <h3>Заинтересовались?</h3>
     <p>Укажите предполагаемые даты поездки,<br>
     и мы покажем вам лучшие предложения гостиниц в Седоне </p>
     </div>
-      <div class="pop-up">
-        <div>
-          <h3>Поиск гостиницы в Седоне</h3>
-        </div>
-        <div>
-          <form action="https://echo.htmlacademy.ru/courses" method="post">
+    <div class="pop-up">
+    <form action="https://echo.htmlacademy.ru/courses" method="post">
+<fieldset>
+    <h3>Поиск гостиницы в Седоне</h3>
+    <div class="field">
     <label for="check-in-date"> Дата заезда</label>
     <input type="text" id="check-in-date" name="check-in-date" placeholder="24 апреля 2017" required tabindex="1" alt="Дата заезда">
     <div class="calendar"> <img src="img/calendar.svg"></div>
+    </div>
+    <div class="field">
     <label for="check-out-date">Дата выезда</label>
     <input type="text" id="check-out-date" name="check-out-date" placeholder="4 июля 2017" required tabindex="2" alt="Дата выезда">
     <div class="calendar"> <img src="img/calendar.svg"></div>
+    </div>
+    <div class="short-field">
     <label for="adult">Взрослые:</label>
     <input type="bottom-minus" value="-" tabindex="3" alt="меньше">
     <input type="text" id="adult" name="adult" value="2" alt="количество взрослых">
     <input type="bottom-plus" value="+" tabindex="4" alt="больше">
+    </div>
+    <div class="short-field">
     <label for="kids">Дети:</label>
     <input type="bottom-minus" value="-" tabindex="5" alt="меньше">
     <input type="text" id="kids" name="kids" value="0" alt="количество детей">
     <input type="bottom-plus" value="+" tabindex="6" alt="больше">
-     <div class="buttons">
-       <input type="submit" value="Найти" tabindex="7" alt="Логотип Sedona="Найти">
-     </div>
-         </form>
-      </div>
+    </div>
+    <div class="buttons"></div>
+    <input type="submit" value="Найти" tabindex="7" alt="Найти">
+  </fieldset>
+    </form>
+  </div>
   </section>
   <section class="map">
   </section>
 </main>
-<footer>
-  <a class="contact" href=#>#visit Sedona</a><br>
-  <a class="contact" href=#  alt="номер телефона">Тел: +7(495) 666-02-66</a>
- <div>
+<footer class="main-footer">
+  <div class="contact">
+  <a href=#>#visit Sedona</a><br>
+  <a href=#  alt="номер телефона">Тел: +7(495) 666-02-66</a>
+</div>
  <ul class="socials">
    <li class="social"><a href=https://twitter.com/ alt="Твитер"></a></li>
    <li class="social"><a href=https://www.facebook.com/ alt="Фейсбук"></a></li>
    <li class="social"><a href=https://www.youtube.com/ alt="Ютюб"></a></li>
  </ul>
 </div>
-<div class="academy">
+<div class="copyright">
     Website by
 <a href= https://htmlacademy.ru/ tabindex="0" alt="html академия" >
 </a>
