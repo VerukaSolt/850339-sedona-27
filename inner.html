@@ -8,88 +8,101 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-<div class="container">
+<div class="container clearfix">
 <header>
-  <nav>
-    <a class="main-header-logo" href="index.html" tabindex="5">
+  <nav class="site-navigation ">
+    <a class="main-header-logo" href="../index.html">
     <img src="img/logo.svg" width="140" height="72" alt="Логотип Sedona">
     </a>
-    <ul class="site-navigation">
-      <li><a href="info.html" tabindex="1">информация</a></li>
-      <li><a href="foto and video.html" tabindex="2">фото и видео</a></li>
-      <li><a href="state map.html" tabindex="3">карта штата</a></li>
-      <li class="site-navigation-current" tabindex="4"><a href="hotels.html">гостиницы</li>
+    <ul class="navigation">
+      <li class="navigation-item"><a href="info.html"  alt="Информация">информация</a></li>
+      <li class="navigation-item"><a href="foto and video.html" alt="Фото и видео">фото и видео</a></li>
+      <li class="navigation-item"><a href="state map.html"  alt="Карта штата">карта штата</a></li>
+      <li class="navigation-item"><a href="hotels.html" alt="Гостиницы">гостиницы</a></li>
     </ul>
   </nav>
 </header>
 <main class="hotel-list">
 <h1 class="visually-hidden">Гостиницы</h1>
 <section class="accommodation">
-  <article class="hotel">
+  <article class="hotel Amara">
+    <div class="hotel-photo">
+       <img src=img/hotel-picture1.jpg width="135" height="90" alt="Гостиница Amara resort & spa">
+    </div>
+    <div class="hotel-item">
     <h2>
        <a href="Amara.html" tabindex="6">Amara resort & spa</a>
     </h2>
     <span class="type" >Гостиница</span>
     <span class="price">от 4000 р.</span>
-    <a href="Amara.html" tabindex="7">
-       <img src=img/hotel-picture1.jpg width="135" height="90" alt="Гостиница Amara resort & spa">
-    </a>
-<div>
+    <div class="bottons">
     <a class="button-more" href="#" tabindex="8">Подробнее</a>
     <a class="button-book" href="#" tabindex="9">Бронировать</a>
-    <span img src="img.png">
+  </div>
+  </div>
+  <div class="rate-star">
+    <span class="star"></span>
     <div class="rate">Рейтинг: 8,5</div>
-</div>
+  </div>
 </article>
-  <article class="hotel">
+  <article class="hotel Desert">
+    <div class="hotel-photo">
+       <img src=img/hotel-picture2.jpg width="135" height="90" alt="Мотель Desert quail inn">
+    </div>
+    <div class="hotel-item">
     <h2>
        <a href="Desert.html" tabindex="10">Desert quail inn</a>
     </h2>
-    <span class="type" >Мотель</span>
-    <span class="price">от 3000 р.</span>
-    <a href="Desert.html" tabindex="11">
-       <img src=img/hotel-picture2.jpg width="135" height="90" alt="Мотель Desert quail inn">
-    </a>
-<div>
-    <a class="button-more" href="#" tabindex="12">Подробнее</a>
-    <a class="button-book" href="#" tabindex="13">Бронировать</a>
-    <span img src="img2.png">
+        <span class="type" >Мотель</span>
+        <span class="price">от 3000 р.</span>
+      <div class="bottons">
+        <a class="button-more" href="#" tabindex="12">Подробнее</a>
+        <a class="button-book" href="#" tabindex="13">Бронировать</a>
+      </div>
+  </div>
+  <div class="rate-star">
+    <span class="star"></span>
     <div class="rate">Рейтинг: 8,9</div>
 </div>
 </article>
-  <article class="hotel">
+  <article class="hotel Villas">
+    <div class="hotel-photo">
+       <img src=img/hotel-picture3.jpg width="135" height="90" alt="Апартаменты Villas at poco diablo">
+    </div>
+    <div class="hotel-item">
     <h2>
        <a href="Villas.html" tabindex="14">Villas at poco diablo</a>
     </h2>
-    <span class="type" >Апартаменты</span>
-    <span class="price">от 2000 р.</span>
-    <a href="Villas.html" tabindex="15">
-       <img src=img/hotel-picture3.jpg width="135" height="90" alt="Апартаменты Villas at poco diablo">
-    </a>
-<div>
-    <a class="button-more" href="#" tabindex="16">Подробнее</a>
-    <a class="button-book" href="#" tabindex="17">Бронировать</a>
-    <span img src="img3.png">
+        <span class="type" >Апартаменты</span>
+        <span class="price">от 2000 р.</span>
+       <div class="bottons">
+      <a class="button-more" href="#" tabindex="16">Подробнее</a>
+      <a class="button-book" href="#" tabindex="17">Бронировать</a>
+       </div>
+   </div>
+    <div class="rate-star">
+    <span class="star"></span>
     <div class="rate">Рейтинг: 9,2</div>
-</div>
+   </div>
 </article>
 </section>
 </main>
-<footer>
-  <a class="contact" href=#>#visit Sedona</a><br>
-  <a class="contact" href=#  alt="номер телефона">Тел: +7(495) 666-02-66</a>
- <div>
- <ul class="socials">
-   <li class="social"><a href=https://twitter.com/ alt="Твитер"></a></li>
-   <li class="social"><a href=https://www.facebook.com/ alt="Фейсбук"></a></li>
-   <li class="social"><a href=https://www.youtube.com/ alt="Ютюб"></a></li>
- </ul>
+<footer class="main-footer">
+  <div class="contact">
+  <a href=#>#visit Sedona</a>
+  <a href=#  alt="номер телефона">Тел: +7(495) 666-02-66</a>
 </div>
-<div class="academy">
-    Website by
-<a href= https://htmlacademy.ru/ tabindex="0" alt="html академия" ></a>
+ <ul class="socials">
+   <li class="social"><a href="https://twitter.com/" alt="Твитер"></a></li>
+   <li class="social"><a href="https://www.facebook.com/" alt="Фейсбук"></a></li>
+   <li class="social"><a href="https://www.youtube.com/" alt="Ютюб"></a></li>
+ </ul>
+<div class="copyright">
+    <span>Website by</span>
+<a href= https://htmlacademy.ru/ tabindex="0" alt="html академия" >
+</a>
 </div>
 </footer>
-<div class="container">
+</div>
   </body>
 </html>
